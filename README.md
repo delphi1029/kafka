@@ -10,13 +10,17 @@ docker run --rm -it \
 	landoop/fast-data-dev
   
   #Command to run kafka console
+  
   docker run --rm -it --net=host landoop/fast-data-dev bash
   
   #Command to create topic
+  
   kafka-topics --zookeeper 127.0.0.1:2181 --create --topic first_topic --partitions 3 --replication-factor 1
   
   #Command to produce message from console producer
+  
   kafka-console-producer --broker-list 127.0.0.1:9092 --topic first_topic
   
   #Command to consume message from console consumer
+  
   kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic --from-beginning
