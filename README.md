@@ -24,3 +24,7 @@ docker run --rm -it \
   #Command to consume message from console consumer
   
   kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic --from-beginning
+
+Link to documentation - 
+
+https://kafka.apache.org/documentation/
